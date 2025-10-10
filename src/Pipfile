@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["standard"], version = "*"}
+sqlmodel = "==0.0.22"
+alembic = "==1.14.0"
+asyncpg = "==0.30.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
