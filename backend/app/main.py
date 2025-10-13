@@ -7,8 +7,8 @@ print("sys.path[0]:", sys.path[0])
 
 from fastapi import FastAPI
 
-from core.config import settings
-from api.main import api_router
+from .core.config import settings
+from .api.main import api_router
 
 
 app = FastAPI(
