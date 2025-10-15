@@ -19,6 +19,7 @@ class Settings(BaseSettings):
   PROJECT_NAME: str = ""
   PROJECT_DESCRIPTION: str = ""
   SITE_NAME: str = ""
+  DATABASE_URL: str = ""
 
 
 print("Loaded PROJECT_NAME:", Settings().PROJECT_NAME)
