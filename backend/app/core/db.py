@@ -11,7 +11,7 @@ logger = get_logger()
 engine = create_async_engine(settings.DATABASE_URL)
 
 async_session = async_sessionmaker(
-  engine
+  engine,
   expire_on_commit=False,        ##Session will not automatically expire on commit
   class_= AsyncSession
 )
