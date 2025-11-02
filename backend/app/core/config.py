@@ -12,8 +12,9 @@ class Settings(BaseSettings):
   ENVIRONMENT: Literal["local","staging","production"] = "local"
   model_config = SettingsConfigDict(
     # env_file = "../../.envs/.env.local",env_ignore_empty=True,
-    # extra="ignore"
-    env_file = ENV_FILE
+    
+    env_file = ENV_FILE,
+    extra="ignore"
   )
   API_V1_STR: str = ""
   PROJECT_NAME: str = ""
