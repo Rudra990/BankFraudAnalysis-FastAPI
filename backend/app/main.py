@@ -6,10 +6,10 @@ print("__package__:", __package__)
 print("sys.path[0]:", sys.path[0])
 
 from fastapi import FastAPI
-from .core.config import settings
-from .api.main import api_router
+from backend.app.core.config import settings
+from backend.app.api.main import api_router
 from contextlib import asynccontextmanager
-from .core.db import init_db
+from backend.app.core.db import init_db
 
 
 @asynccontextmanager
